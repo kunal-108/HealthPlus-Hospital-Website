@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPlus</title>
+
+    <!-- Font Awesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Owl Carousel CSS Link -->
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Code Start -->
+    <div class="container-fluid" id="topbar">
+        <div class="row py-2 d-flex justify-content-center align-items-center">
+            <div class="col-lg-2 col-md-6 d-flex justify-content-center align-items-center">
+                <label><i class="fa-solid fa-phone"></i></label><a href="tel:+011 3287 4282"> +011 3287 4282</a>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex align-items-center" id="email">
+                <label><i class="fa-solid fa-envelope"></i></label><a href="mailto:healthplus.123@gmail.com">
+                    healthplus.123@gmail.com</a>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center" id="topbarSocial">
+                <a href="" class="mx-2"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="mx-2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="mx-2"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg px-4" id="main_navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="index.html"><i class="fa-solid fa-house-medical me-1"></i>HealthPlus</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department.html">Department</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor.html">Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown_navbar">
+                            <li><a class="dropdown-item" href="#">Dropdown Item 1</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Item 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Code End -->
+
+    <!-- Hero Section Code Start -->
+    <section id="homepage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12" id="textBox">
+                    <h4 class="">Welcome to HealthPlus</h4>
+                    <h1 class="">Medical Services <br> that you can trust</h1>
+                    <p>There had been no mistakes throughout the entire process. It
+                        had been perfection and he knew it without a doubt, but the results still stared back at him
+                        with the fact that he had lost.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col-lg-5 col-md-12" id="instantBook">
+                    <form class="row">
+                        <h3>Emergency Booking</h3>
+                        <div class="col-md-12">
+                            <input type="text" placeholder="Department" class="form-control" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="email" placeholder="Doctor" class="form-control" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" placeholder="Name" class="form-control" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="number" placeholder="Phone" class="form-control" required>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit">Book Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Code End -->
+
+    <!-- Detail Code Start -->
+    <section id="detailBox">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="box">
+                        <h1>A new way to treat patients in a revolutionary facility</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio vero cum quisquam aliquid at,
+                            officiis dolorem illo non error voluptas hic autem consequatur amet, vel dolor nam labore,
+                            sapiente quibusdam temporibus aut animi reprehenderit facilis? Ex culpa nisi minima nulla.
+                        </p>
+                        <button>View the Services</button>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                    <div class="imgBox">
+                        <img src="./assets/medicalteam.webp" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Detail Code End -->
+
+    <!-- Services Code Start -->
+    <section id="h-service">
+        <div class="container">
+            <div class="row">
+                <div class="container" id="heading">
+                    <h1 class="text-center">Our Facilities</h1>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h4>Emergency Services</h4>
+                        <p>There are different types of secrets. She had held onto plenty of them
+                            during her life, but this one was different.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h4>Free Checkups</h4>
+                        <p>There are different types of secrets. She had held onto plenty of them
+                            during her life, but this one was different.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                        <h4>24/7 Services</h4>
+                        <p>There are different types of secrets. She had held onto plenty of them
+                            during her life, but this one was different.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-user-doctor"></i></div>
+                        <h4>Qualified Doctors</h4>
+                        <p>There are different types of secrets. She had held onto plenty of them
+                            during her life, but this one was different.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Code End -->
+
+    <!-- Image Code Start -->
+    <section id="h-image">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Your Health is Our Priority</h1>
+                    <p>There are different types of secrets. She had held onto plenty of them
+                        during her life, but this one was different. </p>
+                    <button>Search Places</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image Code End -->
+
+    <!-- Appointment Code Start -->
+    <section id="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="container" id="heading">
+                    <h1 class="text-center">Make An Appointment</h1>
+                </div>
+                <div class="container">
+                    <div class="box row">
+                        <div class="col-lg-5 col-md-6 d-flex justify-content-center align-items-center">
+                            <div id="imgBox">
+                                <img src="./assets/appointment.jpg">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div id="formBox">
+                                <form class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Name" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <select class="form-control">
+                                            <option selected disabled>Select Your Service</option>
+                                            <option>Neurology</option>
+                                            <option>Cardiology</option>
+                                            <option>Dental</option>
+                                            <option>Psychaitrist</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="number" placeholder="Phone" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="time" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea placeholder="Message" class="form-control" rows="5"
+                                            required></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit">Book Appointment</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment Code End -->
+
+    <!-- Blog Code Start -->
+    <section id="blogs">
+        <div class="container">
+            <div class="row">
+                <div class="container" id="heading">
+                    <h1 class="text-center5">Our Recent Blogs</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="box">
+                        <img src="./assets/blog1.webp" class="img-fluid rounded" alt="">
+                        <h5>Title of the blog</h5>
+                        <p>He had done everything right. There had been no mistakes throughout the entire process. It
+                            had been perfection and he knew it without a doubt, but the results still stared back at him
+                            with the fact that he had lost.</p>
+                        <hr>
+                        <div class="row d-flex align-items-center" id="user">
+                            <div class="col-md-5 d-flex align-items-center">
+                                <div class="imgBox">
+                                    <img src="./assets/boy1.jpg" alt="">
+                                </div>
+                                <div class="name">Richard</div>
+                            </div>
+                            <div class="col-md-7 d-flex">
+                                <div class="date">15th March</div>
+                                <div class="like"><i class="fa-regular fa-heart me-1"></i>83</div>
+                                <div class="comment"><i class="fa-regular fa-comment me-1"></i>24</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="box">
+                        <img src="./assets/blog2.webp" class="img-fluid rounded" alt="">
+                        <h5>Title of the blog</h5>
+                        <p>He had done everything right. There had been no mistakes throughout the entire process. It
+                            had been perfection and he knew it without a doubt, but the results still stared back at him
+                            with the fact that he had lost.</p>
+                        <hr>
+                        <div class="row d-flex align-items-center" id="user">
+                            <div class="col-md-5 d-flex align-items-center">
+                                <div class="imgBox">
+                                    <img src="./assets/girl1.jpg" alt="">
+                                </div>
+                                <div class="name">Marie</div>
+                            </div>
+                            <div class="col-md-7 d-flex">
+                                <div class="date">31st March</div>
+                                <div class="like"><i class="fa-regular fa-heart me-1"></i>67</div>
+                                <div class="comment"><i class="fa-regular fa-comment me-1"></i>19</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="box">
+                        <img src="./assets/blog3.webp" class="img-fluid rounded" alt="">
+                        <h5>Title of the blog</h5>
+                        <p>He had done everything right. There had been no mistakes throughout the entire process. It
+                            had been perfection and he knew it without a doubt, but the results still stared back at him
+                            with the fact that he had lost.</p>
+                        <hr>
+                        <div class="row d-flex align-items-center" id="user">
+                            <div class="col-md-5 d-flex align-items-center">
+                                <div class="imgBox">
+                                    <img src="./assets/boy2.jpg" alt="">
+                                </div>
+                                <div class="name">Drake</div>
+                            </div>
+                            <div class="col-md-7 d-flex">
+                                <div class="date">07th April</div>
+                                <div class="like"><i class="fa-regular fa-heart me-1"></i>92</div>
+                                <div class="comment"><i class="fa-regular fa-comment me-1"></i>41</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Code End -->
+
+    <!-- Testimonial Code Start -->
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="container" id="heading">
+                    <h1 class="text-center">Happy Stories</h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="testimonialBox">
+                                    <div class="imgBox">
+                                        <img src="./assets/boy1.jpg" class="">
+                                    </div>
+                                    <h4>Richard</h4>
+                                    <p>There had been no mistakes throughout the entire
+                                        process. It had been perfection and he knew it without a doubt.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonialBox">
+                                    <div class="imgBox">
+                                        <img src="./assets/girl1.jpg" class="">
+                                    </div>
+                                    <h4>Marie</h4>
+                                    <p>There had been no mistakes throughout the entire
+                                        process. It had been perfection and he knew it without a doubt.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonialBox">
+                                    <div class="imgBox">
+                                        <img src="./assets/boy2.jpg" class="">
+                                    </div>
+                                    <h4>Drake</h4>
+                                    <p>There had been no mistakes throughout the entire
+                                        process. It had been perfection and he knew it without a doubt.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonialBox">
+                                    <div class="imgBox">
+                                        <img src="./assets/girl2.jpg" class="">
+                                    </div>
+                                    <h4>Emiely</h4>
+                                    <p>There had been no mistakes throughout the entire
+                                        process. It had been perfection and he knew it without a doubt.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonialBox">
+                                    <div class="imgBox">
+                                        <img src="./assets/boy3.jpg" class="">
+                                    </div>
+                                    <h4>Steve</h4>
+                                    <p>There had been no mistakes throughout the entire
+                                        process. It had been perfection and he knew it without a doubt.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonialBox">
+                                    <div class="imgBox">
+                                        <img src="./assets/girl3.jpg" class="">
+                                    </div>
+                                    <h4>Bella</h4>
+                                    <p>There had been no mistakes throughout the entire
+                                        process. It had been perfection and he knew it without a doubt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Code End -->
+
+    <!-- Footer Code Start -->
+    <footer class="container-fluid" id="footer">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand fs-3" href="index.html" id="logo"><i
+                            class="fa-solid fa-house-medical me-1"></i>HealthPlus</a>
+                    <div id="text">
+                        Stay healthy, Save lives...
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div id="text" class="py-3" style="font-weight: normal; font-size: 0.9rem;">
+                        Follow us on <span style="color: var(--blue1); font-weight: 500;">social</span> media
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul id="quicklinks">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Term & Conditons</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Address</h4>
+                    <ul id="info">
+                        <li><i class="fa-solid fa-location-dot"></i>
+                            <div>Building no.16, Pitampura, Delhi-110095</div>
+                        </li>
+
+                        <li><i class="fa-solid fa-phone"></i>
+                            <div>+011 3017 8642</div>
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i>
+                            <div>healthplus.123@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>Our Newsletter</h4>
+                    <p>
+                        Connect with our Newsletter to get new update at a time.
+                    </p>
+                    <div class="subscribe-box">
+                        <form>
+                            <input type="email" placeholder="Enter Email Id" name="email" class="form-control" required>
+                            <button>Join Us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="bottomBar">
+            <p>
+                Copyright © 2024 <a href="#" target="_blank">HealthPlus</a> | All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Footer Code End -->
+
+
+    <!-- Bootstrap Javascript Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS link -->
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- Owl Carousel JS Code Start -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                center: true,
+                loop: true,
+                margin: 10,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Owl Carousel JS Code End -->
+
+</body>
+
+</html>

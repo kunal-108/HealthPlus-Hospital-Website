@@ -1,0 +1,2066 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@300;400;500;600;800;900&family=Young+Serif&display=swap");
+
+/* Color Theme Code Start */
+:root {
+    --blue1: #00a6ff;
+    --blue2: #3cbbff;
+    --blue3: #59c5ff;
+    --blue4: #7ed2ff;
+    --blue5: #8dd7ff;
+    --blue6: #d3f0ff;
+    --blue7: #eef9ff;
+    --black1: rgba(0, 0, 0, 0.75);
+    --black2: rgba(0, 0, 0, 0.6);
+    --black3: rgba(0, 0, 0, 0.5);
+    --black4: rgba(0, 0, 0, 0.4);
+    --black5: rgba(0, 0, 0, 0.2);
+    --black6: rgba(0, 0, 0, 0.1);
+    --white: whitesmoke;
+}
+/* Color Theme Code End */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease all;
+}
+
+/* Top Bar Code Start */
+#topbar {
+    background-color: var(--blue7) !important;
+    font-size: 0.75rem;
+}
+#topbar label {
+    color: var(--blue1);
+    padding-right: 0.3rem;
+}
+#topbar a {
+    color: var(--black2);
+    text-decoration: none;
+    transition: 0.3s ease all;
+}
+#topbar a:hover,
+#topbar a i:hover {
+    color: var(--blue1);
+}
+#topbarSocial {
+    font-size: 1rem;
+}
+/* Top Bar Code End */
+
+/* Header Code Start */
+#main_navbar,
+#dropdown_navbar {
+    background-color: var(--blue6) !important;
+    box-shadow: 0px 5px 15px var(--black5);
+    position: sticky;
+    top: 0;
+    z-index: 1000 !important;
+}
+.navbar-brand i {
+    color: var(--blue1) !important;
+}
+.navbar-brand {
+    font-weight: 500;
+    color: var(--black1) !important;
+}
+.navbar-brand span {
+    font-weight: 700;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 0.83rem;
+    transition: 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--blue1) !important;
+}
+.dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+}
+#dropdown_navbar .dropdown-item {
+    font-size: 0.83rem;
+    transition: 0.3s ease-in-out;
+}
+.dropdown-menu .dropdown-item:hover {
+    color: var(--blue1) !important;
+    background-color: transparent !important;
+}
+#main_navbar button {
+    transition: 0.3s ease-in-out;
+    color: var(--white);
+    background-color: var(--blue1);
+    margin-left: 10px;
+    border: none;
+    border: 1px solid var(--blue1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+#main_navbar button:hover {
+    color: var(--blue1);
+    background-color: var(--white);
+    border: 1px solid var(--blue1);
+}
+/* Header Code End */
+
+/* Footer Code Start */
+#footer {
+    background-color: var(--blue6);
+    padding: 1.5rem 0;
+    padding-bottom: 0;
+}
+#footer #logo {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--black1);
+}
+#footer #logo i {
+    color: var(--blue1);
+}
+#footer #text {
+    font-weight: 500;
+    color: var(--black1);
+    font-size: 1rem;
+}
+#footer .social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+#footer .social-icons a {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    margin-right: 0.75rem;
+    margin-top: 0.5rem;
+    border: 0.01rem solid var(--blue1);
+}
+#footer .social-icons a:hover {
+    background-color: var(--white);
+}
+#footer .social-icons a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--blue1);
+}
+#footer .social-icons a:hover i {
+    color: var(--blue1);
+    background-color: var(--white);
+}
+#footer h4 {
+    position: relative;
+    margin-bottom: 1.3rem;
+    color: var(--black1);
+    font-size: 1.3rem;
+    display: inline-block;
+}
+#footer h4::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background-color: var(--blue1);
+    z-index: 10;
+}
+#footer ul {
+    margin: 0;
+    padding: 0;
+}
+#footer ul li {
+    list-style: none;
+    color: var(--black1);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+#footer #info li,
+#footer #quicklinks li {
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+}
+#footer #info li i {
+    color: var(--blue1);
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+#footer .footer-links ul li a {
+    text-decoration: none;
+    color: var(--black1);
+    font-size: 0.9rem;
+}
+#footer .footer-links ul li a:hover {
+    color: var(--blue1);
+    letter-spacing: 0.03rem;
+}
+#footer p {
+    font-size: 0.9rem;
+    color: var(--black1);
+}
+#footer .subscribe-box input {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    border: 1px solid var(--blue1);
+    width: 100%;
+    color: var(--blue1);
+}
+#footer .subscribe-box button {
+    width: 100%;
+    padding: 0.4rem 0;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--blue1);
+    border: none;
+    border-radius: 5px;
+    border: 0.01rem solid var(--blue1);
+    font-size: 0.9rem;
+}
+#footer .subscribe-box button:hover {
+    color: var(--blue1);
+    background-color: white;
+}
+/* Footer Code End */
+
+/* Bottom Bar Code Start */
+#bottomBar {
+    text-align: center;
+    border-top: 1px solid var(--black5);
+    background-color: var(--blue6);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+#bottomBar p {
+    padding-top: 1rem;
+    color: var(--black1);
+    font-size: 0.9rem;
+}
+#bottomBar p a {
+    color: var(--blue1);
+    font-weight: 500;
+    text-decoration: none;
+}
+/* Bottom Bar Code End */
+
+/* Index Page Code Start */
+/* Home Page Code Start */
+#homepage {
+    min-height: 90vh;
+    background-image: linear-gradient(to right, var(--black2), transparent),
+        url("./assets/banner.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+}
+#homepage #textBox {
+    color: var(--white);
+}
+#homepage #textBox h4 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+#homepage #textBox h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    margin: 1.5rem 0;
+    line-height: 4.2rem;
+    display: inline-block;
+    position: relative;
+}
+#homepage #textBox h1::before {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 0;
+    background-color: var(--blue1);
+    height: 7px;
+    width: 75%;
+    border-radius: 20px;
+}
+#homepage #textBox p {
+    margin: 3rem 0;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    word-spacing: 2px;
+}
+#homepage #textBox button {
+    width: 40%;
+    border: none;
+    outline: none;
+    border: 1px solid var(--blue1);
+    color: var(--white);
+    background-color: var(--blue1);
+    font-weight: 600;
+    padding: 1rem 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+#homepage #textBox button:hover {
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: var(--blue1);
+}
+#homepage #instantBook {
+    margin: auto 0;
+}
+#homepage #instantBook form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    margin: 0 3rem;
+    box-shadow: 0 5px 10px var(--black4);
+    border-radius: 10px;
+    padding: 1.3rem;
+}
+#homepage #instantBook form h3 {
+    font-weight: 600;
+    color: var(--white);
+}
+#homepage #instantBook form .col-md-12 {
+    margin: 0.75rem 0;
+}
+#homepage #instantBook form .col-md-12 input {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--black1);
+}
+#homepage #instantBook form .col-md-12 input::placeholder {
+    color: var(--white);
+}
+#homepage #instantBook form button {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--blue1);
+    padding: 0.4rem 0;
+    color: var(--white);
+    background-color: var(--blue1);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+#homepage #instantBook form button:hover {
+    background-color: var(--white);
+    color: var(--blue1);
+}
+/* Home Page Code End */
+
+/* Detailbox Code Start */
+#detailBox {
+    margin: 5rem 0;
+}
+#detailBox .box h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: var(--black1);
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+#detailBox .box h1::before {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    left: 0;
+    background-color: var(--blue1);
+    height: 5px;
+    width: 60%;
+    border-radius: 20px;
+}
+#detailBox .box p {
+    color: var(--black2);
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+#detailBox .box button {
+    width: 40%;
+    border-radius: 2px;
+    border: 1px solid var(--blue1);
+    position: relative;
+    margin-right: 100px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+    background-color: var(--blue1);
+    font-weight: 500;
+}
+#detailBox .box button:hover {
+    background-color: var(--white);
+    color: var(--blue1);
+}
+/* Detailbox Code End */
+
+/* Service Code Start */
+#h-service {
+    margin: 5rem 0;
+}
+#h-service .container .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--blue1);
+    padding: 1.5rem 0.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--black5);
+}
+#h-service .container .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 30px var(--black2);
+}
+#h-service .container .col-lg-3 .icon {
+    height: 100px;
+    width: 100px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#h-service .container .col-lg-3 .icon i {
+    font-size: 2.3rem;
+    color: var(--blue1);
+}
+#h-service .container .col-lg-3 h4 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+/* Service Code End */
+
+/* Image Code Start */
+#h-image {
+    min-height: 80vh;
+    background-image: url("./assets/banner2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#h-image .container-fluid {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h-image .container-fluid h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+}
+#h-image .container-fluid p {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin: 1.5rem 15%;
+    width: 70%;
+}
+#h-image .container-fluid button {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: var(--white);
+    color: var(--black1);
+}
+#h-image .container-fluid button:hover {
+    background-color: var(--black1);
+    color: var(--white);
+}
+/* Image Code End */
+
+/* Appointment Code Start */
+#appointment {
+    margin: 5rem 0;
+}
+#appointment .box {
+    background-color: var(--white);
+    padding: 1.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--black5);
+}
+#appointment img {
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+}
+#appointment #formBox {
+    height: 100%;
+    padding: 0 1rem;
+}
+#appointment #formBox input,
+#appointment #formBox select,
+#appointment #formBox textarea {
+    margin-bottom: 1.1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    color: var(--black1);
+}
+#appointment #formBox form button {
+    margin: 1rem 0;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid var(--blue1);
+    padding: 0.75rem 0;
+    color: var(--white);
+    background-color: var(--blue1);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#appointment #formBox form button:hover {
+    background-color: var(--white);
+    color: var(--blue1);
+}
+/* Appointment Code End */
+
+/* Blog Code Start */
+#blogs {
+    margin: 5rem 0;
+}
+#blogs .box {
+    margin: 1rem 0;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: 0 5px 10px var(--black6);
+    border-radius: 10px;
+}
+#blogs .box:hover {
+    scale: 1.02;
+    box-shadow: 0 5px 20px var(--black5);
+}
+#blogs .box:hover h5 {
+    color: var(--blue1);
+}
+#blogs .box h5 {
+    font-weight: 600;
+    margin-top: 1rem;
+    color: var(--black1);
+    position: relative;
+}
+#blogs .box h5::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    background-color: var(--blue2);
+    height: 3px;
+    width: 30%;
+    border-radius: 10px;
+}
+#blogs .box p {
+    font-size: 0.9rem;
+    color: var(--black2);
+    margin: 1rem 0;
+}
+#blogs .box #user .imgBox {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#blogs .box #user .imgBox img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#blogs .box #user .name {
+    margin-left: 10px;
+    color: var(--blue1);
+    font-weight: 500;
+}
+#blogs .box #user .date,
+#blogs .box #user .like,
+#blogs .box #user .comment {
+    font-size: 0.85rem;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#blogs .box #user .date:hover,
+#blogs .box #user .like:hover i,
+#blogs .box #user .comment:hover i {
+    color: var(--blue1);
+}
+/* Blog Code End*/
+
+/* Testimonial Code Start */
+#testimonial {
+    margin: 5rem 0;
+}
+#testimonial .testimonialBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    background-color: var(--blue7);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--black5);
+    cursor: pointer;
+}
+#testimonial .testimonialBox:hover {
+    scale: 1.03;
+}
+#testimonial .testimonialBox .imgBox {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--black5);
+}
+#testimonial .testimonialBox .imgBox img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#testimonial .testimonialBox h4 {
+    color: var(--black1);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+}
+#testimonial .testimonialBox h4::after {
+    position: absolute;
+    content: "";
+    left: 15%;
+    bottom: -3px;
+    height: 3px;
+    width: 70%;
+    background-color: var(--blue1);
+}
+#testimonial .testimonialBox p {
+    color: var(--black2);
+}
+/* Testimonial Code End */
+/* Index Page Code End */
+
+/* Similar Code for All Main Headings Start */
+#heading {
+    display: flex;
+    justify-content: center;
+}
+#heading h1 {
+    letter-spacing: 1px;
+    color: var(--black1);
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+}
+#heading h1::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 20%;
+    width: 60%;
+    height: 4px;
+    background-color: var(--blue1);
+    border-radius: 2px;
+    z-index: 10;
+}
+/* Similar Code for All Main Headings End */
+
+/* About Page Code Start */
+#sub-heading {
+    font-weight: 600;
+    color: var(--black1);
+    font-size: 3.1rem;
+}
+#about #text {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    color: var(--black2);
+}
+#about #about-section {
+    background-color: var(--blue7);
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem;
+}
+#about #buttons button {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--blue1);
+    border: 0.1rem solid var(--blue1);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+#about #buttons button:hover {
+    background-color: white;
+    color: var(--blue1);
+}
+#about #buttons button:last-child {
+    background-color: rgb(0, 203, 193);
+    border: 0.1rem solid rgb(0, 203, 193);
+}
+#about #buttons button:last-child:hover {
+    background-color: white;
+    color: rgb(0, 203, 193);
+}
+#about #data {
+    margin: 3rem 0;
+    overflow: hidden;
+    padding: 3rem 0;
+}
+#about #data .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blue7);
+    padding: 2.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--black6);
+    cursor: pointer;
+}
+#about #data .box:hover {
+    box-shadow: 0 5px 20px var(--black5);
+    transform: translateY(-10px);
+}
+#about #data .box .icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#about #data .box .icon i {
+    font-size: 2rem;
+    color: var(--blue1);
+}
+#about #data .box h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black2);
+}
+#about #data .box p {
+    font-size: 1.1rem;
+    color: var(--black3);
+}
+#about #data1 {
+    color: var(--black1);
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+#about #data1 h3 {
+    font-weight: 600;
+    color: var(--black1);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+#about #data1 h3::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--blue1);
+    z-index: 10;
+}
+#about #data1 p {
+    padding-right: 2rem;
+    color: var(--black2);
+}
+#about #data1 #timebox {
+    background-color: var(--blue1);
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--black5);
+    border-radius: 20px;
+}
+#about #data1 #timebox:hover {
+    box-shadow: 0 5px 20px var(--black2);
+}
+#about #data1 #timebox h4 {
+    margin: 2rem 0;
+    font-size: 1.75rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+#about #data1 #timebox h4 i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+#about #data1 #timebox p {
+    margin: 1.15rem 0;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 500;
+}
+#about #data1 #timebox p .time {
+    float: right;
+}
+/* About Page Code End */
+
+/* Department Page Code Start */
+#department .box {
+    padding: 1.5rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px var(--black6);
+    cursor: pointer;
+}
+#department .box:hover {
+    box-shadow: 0 5px 20px var(--black5);
+    transform: translateY(-10px);
+}
+#department img {
+    border-radius: 10px;
+}
+#department h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--black1);
+    text-align: center;
+}
+#department p {
+    margin: 1rem 0;
+    color: var(--black2);
+    text-align: justify;
+}
+#department button {
+    margin: 0.5rem 25%;
+    width: 50%;
+    border: none;
+    outline: none;
+    border: 1px solid var(--blue1);
+    background: none;
+    color: var(--blue1);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+}
+#department button:hover {
+    background-color: var(--blue1);
+    color: var(--white);
+}
+/* Department Page Code End */
+
+/* Doctor Page Code Start */
+#doctors .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--blue7);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--black6);
+    cursor: pointer;
+}
+#doctors .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px var(--black5);
+}
+#doctors .box .imgBox {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#doctors .box .imgBox img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#doctors .box .imgBox:hover img {
+    transform: scale(1.1);
+}
+#doctors .box h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    color: var(--black1);
+    letter-spacing: 1px;
+}
+#doctors .box .profession {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--blue2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -0.5rem;
+    position: relative;
+}
+#doctors .box .profession::after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 20%;
+    height: 2px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: var(--blue2);
+}
+#doctors .box .info {
+    text-align: justify;
+    color: var(--black2);
+    line-height: 1.5rem;
+}
+#doctors .box button {
+    margin: 0 25%;
+    width: 50%;
+    border: none;
+    outline: none;
+    border: 1px solid var(--blue1);
+    background: none;
+    color: var(--blue1);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-radius: 30px;
+}
+#doctors .box button:hover {
+    background-color: var(--blue1);
+    color: var(--white);
+}
+/* Doctor Page Code End */
+
+/* Service Page Code Start */
+#service .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--blue7);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--black6);
+    cursor: pointer;
+}
+#service .box:hover {
+    background-color: var(--blue1);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px var(--black4);
+}
+#service .box .icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid var(--blue3);
+}
+#service .box:hover .icon {
+    background-color: var(--blue1);
+    border-color: var(--white);
+}
+#service .box .icon i {
+    font-size: 2rem;
+    color: var(--blue1);
+}
+#service .box:hover .icon i {
+    color: var(--white);
+}
+#service .box h4 {
+    margin: 1rem 0 1.5rem;
+    color: var(--black1);
+    position: relative;
+}
+#service .box h4::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--blue1);
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+}
+#service .box:hover h4::before {
+    background-color: var(--white);
+    left: 15%;
+    width: 70%;
+}
+#service .box p {
+    text-align: justify;
+    color: var(--black2);
+}
+#service .box:hover h4,
+#service .box:hover p {
+    color: white;
+}
+#service .box button {
+    width: 50%;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border: none;
+    outline: none;
+    background-color: var(--blue1);
+    color: var(--white);
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+#service .box button:hover {
+    scale: 0.95;
+}
+#service .box:hover button {
+    background-color: var(--white);
+    color: var(--blue1);
+}
+/* Service Page Code End */
+
+/* Contact Page Code Start */
+#contact #info {
+    margin: 2rem 0;
+}
+#contact #info .cards {
+    height: 100%;
+    border-radius: 2px;
+    padding: 2rem 0.5rem;
+    background-color: var(--blue7);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 10px var(--black6);
+    cursor: pointer;
+}
+#contact #info .cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px var(--black5);
+}
+#contact #info .cards .icon {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+#contact #info .cards .icon i {
+    font-size: 1.7rem;
+    color: var(--blue1);
+}
+#contact #info .cards h5 {
+    font-weight: 500;
+    color: var(--black1);
+}
+#contact #info .cards p {
+    color: var(--black4);
+}
+#contact h3 {
+    font-weight: 600;
+    color: var(--black1);
+    position: relative;
+    display: inline-block;
+    margin: 2rem 0;
+}
+#contact h3::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--blue1);
+    z-index: 10;
+}
+#contact #form-section {
+    padding: 1.5rem 1rem;
+}
+#contact form input,
+#contact form textarea {
+    border-radius: 2px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: var(--black4);
+}
+#contact form button {
+    width: 50%;
+    border-radius: 2px;
+    border: 1px solid var(--blue1);
+    position: relative;
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+    background-color: var(--blue1);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+#contact form button:hover {
+    background-color: var(--white);
+    color: var(--blue1);
+}
+#contact #form-section #map {
+    padding: 10px;
+    border: 1.5px solid var(--black6);
+}
+#contact #form-section #map iframe {
+    height: 100%;
+    width: 100%;
+}
+/* Contact Page Code End */
+
+/* Responsive Code Starts Here */
+@media (max-width: 1024px) {
+    /* Index File Code Start */
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+    }
+    #homepage {
+        padding: 4rem 0;
+    }
+    #homepage #textBox h4 {
+        font-size: 1.6rem;
+    }
+    #homepage #textBox h1 {
+        font-size: 3.4rem;
+        line-height: 3.6rem;
+    }
+    #homepage #textBox h1::before {
+        bottom: -22px;
+        height: 6px;
+    }
+    #homepage #textBox p {
+        font-size: 1rem;
+    }
+    #homepage #textBox button {
+        font-size: 0.9rem;
+        padding: 0.8rem 0;
+    }
+    #homepage #instantBook form {
+        margin: 0 2rem;
+        padding: 1.3rem 0.9rem;
+    }
+    #homepage #instantBook form h3 {
+        font-size: 1.6rem;
+    }
+    #homepage #instantBook form .col-md-12 {
+        margin: 0.6rem 0;
+    }
+    #homepage #instantBook form .col-md-12 input {
+        font-size: 0.9rem;
+    }
+    #homepage #instantBook form button {
+        margin-top: 0.8rem;
+    }
+    #detailBox {
+        margin: 3.5rem 0;
+    }
+    #detailBox .box h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    #detailBox .box p {
+        font-size: 1rem;
+    }
+    #h-service {
+        margin: 3.5rem 0;
+    }
+    #h-service .container .col-lg-3 .icon {
+        height: 90px;
+        width: 90px;
+    }
+    #h-service .container .col-lg-3 .icon i {
+        font-size: 2rem;
+    }
+    #h-service .container .col-lg-3 h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    #h-service .container .col-lg-3 p {
+        font-size: 0.9rem;
+    }
+    #appointment {
+        margin: 3.5rem 0;
+    }
+    #appointment #formBox input,
+    #appointment #formBox select,
+    #appointment #formBox textarea {
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+    #appointment #formBox form button {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+    }
+    #blogs {
+        margin: 3.5rem 0;
+    }
+    #blogs .box #user .imgBox {
+        height: 30px;
+        width: 30px;
+    }
+    #blogs .box #user .name {
+        font-size: 0.9rem;
+    }
+    #blogs .box #user .date,
+    #blogs .box #user .like,
+    #blogs .box #user .comment {
+        font-size: 0.67rem;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    #blogs .box #user .date:hover,
+    #blogs .box #user .like:hover i,
+    #blogs .box #user .comment:hover i {
+        color: var(--blue1);
+    }
+    #testimonial {
+        margin: 3.5rem 0;
+    }
+    /* Index File Code End */
+
+    /* About File Code Start */
+    #sub-heading {
+        font-size: 2.3rem;
+    }
+    #about #about-section {
+        padding: 2rem 1.5rem;
+    }
+    #about #text {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    #about #buttons button {
+        padding: 0.75rem 1.5rem;
+        margin-right: 0.75rem;
+        font-size: 1rem;
+    }
+    #about #data {
+        padding: 1.5rem 0;
+    }
+    #about #data .box .icon {
+        height: 90px;
+        width: 90px;
+    }
+    #about #data .box .icon i {
+        font-size: 1.75rem;
+    }
+    #about #data .box h5 {
+        font-size: 1.75rem;
+    }
+    #about #data .box p {
+        font-size: 1rem;
+    }
+    #about #data1 h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.75rem;
+    }
+    #about #data1 h3::before {
+        width: 70%;
+        height: 3px;
+    }
+    #about #data1 p {
+        font-size: 0.95rem;
+    }
+    #about #data1 #timebox {
+        padding: 0.75rem 1.5rem;
+    }
+    #about #data1 #timebox h4 {
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    #about #data1 #timebox h4 i {
+        font-size: 1.75rem;
+        margin-right: 0.5rem;
+    }
+    #about #data1 #timebox p {
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+    /* About File Code End */
+
+    /* Department File Code Start */
+    #department .box {
+        padding: 1.25rem;
+        border-radius: 15px;
+    }
+    #department h3 {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+        margin-top: 1.5rem;
+    }
+    #department p {
+        font-size: 0.95rem;
+        margin-top: 0rem;
+    }
+    #department button {
+        margin: 0.25rem 20%;
+        width: 60%;
+        font-weight: normal;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+    /* Department File Code End */
+
+    /* Doctor File Code Start */
+    #doctors .box {
+        padding: 1.2rem;
+        margin: 1rem 0.2rem;
+    }
+    #doctors .box .imgBox {
+        height: 150px;
+        width: 150px;
+    }
+    #doctors .box h4 {
+        font-size: 1.4rem;
+    }
+    #doctors .box .profession {
+        font-size: 0.8rem;
+    }
+    #doctors .box .info {
+        font-size: 0.9rem;
+    }
+    #doctors .box button {
+        margin: 0 20%;
+        width: 60%;
+        font-size: 0.9rem;
+    }
+    /* Doctor File Code End */
+
+    /* Service File Code Start */
+    #service .box .icon {
+        height: 90px;
+        width: 90px;
+    }
+    #service .box .icon i {
+        font-size: 1.75rem;
+    }
+    #service .box h4 {
+        font-size: 1.35rem;
+    }
+    #service .box p {
+        font-size: 0.9rem;
+    }
+    /* Service File Code End */
+
+    /* Contact File Code Start */
+    #contact #info {
+        margin: 1rem 0;
+        margin-bottom: 2rem;
+    }
+    #contact #info .cards .icon {
+        margin-bottom: 1rem;
+    }
+    #contact #info .cards p {
+        font-size: 0.85rem;
+    }
+    #contact #form-section {
+        padding: 1rem 0.5rem;
+    }
+    #contact form input,
+    #contact form textarea {
+        font-size: 0.9rem;
+        padding-top: 0.65rem;
+        padding-bottom: 0.65rem;
+        margin-bottom: 1.2rem;
+    }
+    #contact form button {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+    /* Contact File Code End */
+}
+
+@media (max-width: 768px) {
+    /* Index File Code Start */
+    #topbar {
+        display: none;
+    }
+    #main_navbar button {
+        margin-left: 0;
+    }
+    #homepage {
+        padding: 3rem 0;
+    }
+    #homepage #textBox {
+        margin-bottom: 3rem;
+    }
+    #homepage #textBox h4 {
+        font-size: 1.75rem;
+    }
+    #homepage #textBox h1 {
+        font-size: 4rem;
+        line-height: 4.2rem;
+    }
+    #homepage #textBox h1::before {
+        bottom: -25px;
+        height: 7px;
+    }
+    #homepage #textBox p {
+        font-size: 1.1rem;
+    }
+    #homepage #instantBook form {
+        margin: 0;
+    }
+    #detailBox .box h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+    #detailBox .box h1::before {
+        height: 4px;
+    }
+    #detailBox .box p {
+        font-size: 0.85rem;
+    }
+    #detailBox .box button {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+    #h-service .container .box {
+        padding: 1.5rem 2rem;
+    }
+    #h-service .container .col-lg-3 h4 {
+        font-size: 1.2rem;
+    }
+    #appointment #formBox input,
+    #appointment #formBox select,
+    #appointment #formBox textarea {
+        margin-bottom: 0.6rem;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    #appointment #formBox form button {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    #blogs .box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        padding-top: 2rem;
+        margin: 1.5rem 0;
+    }
+    #blogs .box h5 {
+        font-size: 1.6rem;
+    }
+    #blogs .box h5::before {
+        bottom: -6px;
+        width: 20%;
+    }
+    #blogs .box p {
+        font-size: 1rem;
+    }
+    #blogs .box #user .imgBox {
+        height: 50px;
+        width: 50px;
+    }
+    #blogs .box #user .name {
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    #blogs .box #user .date,
+    #blogs .box #user .like,
+    #blogs .box #user .comment {
+        font-size: 1rem;
+        margin: 0 15px;
+    }
+    /* Index File Code Start */
+
+    /* About File Code Start */
+    #sub-heading {
+        margin-top: 1.5rem;
+        font-size: 3rem;
+    }
+    #about #about-section {
+        padding: 2rem 1rem;
+    }
+    #about #text {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    #about #buttons button {
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    #about #data {
+        padding: 1.5rem 0;
+    }
+    #about #data .box {
+        margin: 1.25rem 0.75rem;
+    }
+    #about #data .box .icon {
+        height: 100px;
+        width: 100px;
+    }
+    #about #data .box .icon i {
+        font-size: 2rem;
+    }
+    #about #data .box h5 {
+        font-size: 2rem;
+    }
+    #about #data .box p {
+        font-size: 1.2rem;
+        color: var(--black3);
+    }
+    #about #data1 h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #about #data1 h3::before {
+        height: 3.5px;
+        bottom: -10px;
+    }
+    #about #data1 p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    #about #data1 #timebox {
+        padding: 0.75rem 2rem;
+    }
+    #about #data1 #timebox h4 {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+    #about #data1 #timebox h4 i {
+        font-size: 2.1rem;
+    }
+    #about #data1 #timebox p {
+        font-size: 1.1rem;
+    }
+    #about #data1 #timebox p .time {
+        font-size: 1rem;
+    }
+    /* About File Code End */
+
+    /* Department File Code Start */
+    #department h3 {
+        margin: 0.75rem 0;
+        margin-top: 1rem;
+    }
+    /* Department File Code End */
+
+    /* Contact File Code Start */
+    #contact #info .col-md-6 {
+        margin: 1rem 0rem;
+    }
+    #contact #info .cards .icon {
+        margin-bottom: 1rem;
+    }
+    #contact #info .cards p {
+        font-size: 0.9rem;
+    }
+    #contact #form-section {
+        padding: 1rem 0.5rem;
+    }
+    #contact form input,
+    #contact form textarea {
+        font-size: 0.9rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+    #contact form button {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+    }
+    #contact #form-section #map iframe {
+        height: 400px;
+        width: 100%;
+    }
+    /* Contact File Code End */
+}
+
+@media (max-width: 576px) {
+    /* Index File Code Start */
+    #homepage {
+        padding: 2rem 1rem;
+    }
+    #homepage #textBox h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    #homepage #textBox h1 {
+        font-size: 2.35rem;
+        word-spacing: 1px;
+        font-weight: 700;
+        margin: 1rem 0;
+        line-height: 2.5rem;
+    }
+    #homepage #textBox h1::before {
+        bottom: -15px;
+        height: 5px;
+        width: 70%;
+    }
+    #homepage #textBox p {
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        text-align: justify;
+    }
+    #homepage #textBox button {
+        width: 50%;
+        font-size: 0.9rem;
+        padding: 0.75rem 0;
+    }
+    #homepage #instantBook {
+        margin-bottom: 1.5rem;
+    }
+    #homepage #instantBook form {
+        margin: 0rem;
+        padding: 1rem 0.5rem;
+    }
+    #detailBox {
+        margin: 3rem 1rem;
+    }
+    #detailBox .box h1 {
+        font-size: 2rem;
+    }
+    #detailBox .box h1::before {
+        width: 75%;
+    }
+    #detailBox .box p {
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+    #detailBox .box button {
+        width: 60%;
+        font-size: 0.9rem;
+    }
+    #detailBox .imgBox {
+        margin: 1rem 0;
+    }
+    #heading h1 {
+        margin-bottom: 1.5rem;
+    }
+    #h-service {
+        margin: 3rem 0;
+    }
+    #h-service .container .box {
+        margin: 1rem 2rem;
+    }
+    #h-service .container .col-lg-3 h4 {
+        font-size: 1.4rem;
+        margin: 0.75rem 0;
+    }
+    #h-service .container .col-lg-3 p {
+        text-align: justify;
+    }
+    #h-image .container-fluid h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-top: 1.5rem;
+    }
+    #h-image .container-fluid p {
+        font-size: 1rem;
+        margin: 1rem 2%;
+        width: 96%;
+    }
+    #h-image .container-fluid button {
+        margin-bottom: 2rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    #appointment {
+        margin: 3rem 0;
+    }
+    #appointment img {
+        margin-bottom: 2rem;
+    }
+    #appointment #formBox input,
+    #appointment #formBox select,
+    #appointment #formBox textarea {
+        margin-bottom: 0.75rem;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    #appointment #formBox form button {
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.6rem 0;
+    }
+    #blogs {
+        margin: 3rem 0;
+    }
+    #blogs .box {
+        padding: 1rem;
+        margin: 1rem 1.5rem;
+    }
+    #blogs .box h5 {
+        font-size: 1.4rem;
+    }
+    #blogs .box h5::before {
+        width: 30%;
+    }
+    #blogs .box p {
+        font-size: 0.9rem;
+        text-align: justify;
+        margin: 1rem 0 0.5rem;
+    }
+    #blogs .box #user .col-md-5 {
+        margin-bottom: 0.5rem;
+    }
+    #blogs .box #user .name {
+        margin-left: 15px;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    #blogs .box #user .date,
+    #blogs .box #user .like,
+    #blogs .box #user .comment {
+        margin: 0;
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+    #testimonial {
+        margin: 3rem 0;
+    }
+    #testimonial p {
+        text-align: justify;
+        padding: 0 1rem;
+    }
+    #footer h4 {
+        margin: 1rem 0 1.5rem;
+    }
+    #footer #info li,
+    #footer #quicklinks li {
+        margin-bottom: 0.5rem;
+    }
+    #footer .subscribe-box button:hover {
+        color: var(--blue1);
+        background-color: white;
+    }
+    #footer p {
+        font-size: 0.85rem;
+    }
+    /* Index File Code End */
+
+    /* About File Code Start */
+    #sub-heading {
+        font-size: 2.1rem;
+    }
+    #about #about-section {
+        padding: 2rem 1rem;
+    }
+    #about #text {
+        font-size: 0.95rem;
+    }
+    #about #buttons button {
+        font-size: 0.85rem;
+        margin-right: 0.25rem;
+        margin-top: 0.5rem;
+    }
+    #about #data {
+        padding: 1rem 0;
+    }
+    #about #data .box {
+        margin: 1.5rem 2rem;
+    }
+    #about #data .box .icon {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 1.5rem;
+    }
+    #about #data .box .icon i {
+        font-size: 2rem;
+    }
+    #about #data .box h5 {
+        font-size: 2rem;
+    }
+    #about #data .box p {
+        font-size: 1.2rem;
+        color: var(--black3);
+    }
+    #about #data1 {
+        margin: 0 0.5rem;
+    }
+    #about #data1 h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #about #data1 h3::before {
+        height: 3.5px;
+        bottom: -10px;
+    }
+    #about #data1 p {
+        font-size: 1rem;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    #about #data1 #timebox {
+        margin-top: 2rem;
+        padding: 0.75rem 2rem;
+    }
+    #about #data1 #timebox h4 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    #about #data1 #timebox h4 i {
+        font-size: 1.75rem;
+    }
+    #about #data1 #timebox p {
+        font-size: 0.95rem;
+    }
+    #about #data1 #timebox p .time {
+        font-size: 0.9rem;
+    }
+    /* About File Code End */
+
+    /* Department File Code Start */
+    #department p {
+        font-size: 0.9rem;
+    }
+    /* Department File Code End */
+
+    /* Service File Code Start */
+    #service .box {
+        margin: 1rem;
+    }
+    /* Service File Code End*/
+
+    /* Contact File Code Start */
+    #contact #info {
+        margin: 0;
+    }
+    #contact #info .col-md-6 {
+        margin: 1rem 0rem;
+    }
+    #contact #info .cards .icon {
+        margin-bottom: 1.25rem;
+        height: 90px;
+        width: 90px;
+    }
+    #contact #info .cards .icon i {
+        font-size: 2rem;
+    }
+    #contact #info .cards h5 {
+        font-size: 1.5rem;
+    }
+    #contact #info .cards p {
+        font-size: 1rem;
+    }
+    #contact #form-section #map iframe {
+        height: 300px;
+        width: 100%;
+    }
+    /* Contact File Code End */
+}
+
+@media (max-width: 376px) {
+    /* Index File Code Start */
+    #homepage #textBox h1 {
+        font-size: 2.1rem;
+        font-weight: 800;
+    }
+    #homepage #textBox p {
+        text-align: justify;
+        word-spacing: -2px;
+    }
+    #detailBox .box h1 {
+        font-size: 1.75rem;
+    }
+    #detailBox .box h1::before {
+        width: 75%;
+        bottom: -10px;
+    }
+    #detailBox .box p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+    #detailBox .box button {
+        width: 75%;
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+    #detailBox .imgBox {
+        margin: 1rem 0;
+    }
+    #blogs .box h5::before {
+        width: 50%;
+    }
+    /* Index File Code End */
+
+    /* About File Code Start */
+    #sub-heading {
+        font-size: 1.9rem;
+    }
+    #about #about-section {
+        padding: 2rem 1rem;
+    }
+    #about #text {
+        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+    #about #buttons button {
+        font-size: 0.85rem;
+        margin-right: 0.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+    #about #data {
+        padding: 1rem 0;
+    }
+    #about #data .box {
+        margin: 1.5rem 2rem;
+    }
+    #about #data .box .icon {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 1.5rem;
+    }
+    #about #data .box .icon i {
+        font-size: 2rem;
+    }
+    #about #data .box h5 {
+        font-size: 2rem;
+    }
+    #about #data .box p {
+        font-size: 1.2rem;
+        color: var(--black3);
+    }
+    #about #data1 h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1.75rem;
+    }
+    #about #data1 h3::before {
+        height: 3px;
+        bottom: -8px;
+    }
+    #about #data1 p {
+        font-size: 0.95rem;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    #about #data1 #timebox {
+        margin-top: 1.5rem;
+        padding: 0.3rem 1.5rem;
+    }
+    #about #data1 #timebox h4 i {
+        font-size: 1.75rem;
+    }
+    #about #data1 #timebox p {
+        font-size: 0.9rem;
+    }
+    #about #data1 #timebox p .time {
+        font-size: 0.85rem;
+    }
+    /* About File Code End */
+
+    /* Contact File Code Start */
+    #contact #form-section {
+        padding: 0.5rem 0;
+    }
+    #contact form button {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        margin-bottom: 3rem;
+        padding: 0.75rem 0;
+        width: 100%;
+    }
+    #contact #form-section #map iframe {
+        height: 300px;
+        width: 100%;
+    }
+    /* Contact File Code End */
+}
+@media (max-width: 321px) {
+    /* About File Code Start */
+    #sub-heading {
+        font-size: 1.55rem;
+    }
+    #about #about-section {
+        padding: 2rem 1rem;
+    }
+    #about #text {
+        margin: 0.75rem 0;
+    }
+    #about #buttons button {
+        padding: 0.6rem 0;
+        width: 100%;
+    }
+    #about #data {
+        padding: 0;
+    }
+    #about #data .box {
+        margin: 1.5rem 0.5rem;
+    }
+    #about #data1 h3::before {
+        bottom: -5px;
+    }
+    #about #data1 p {
+        margin-bottom: 1rem;
+    }
+    #about #data1 #timebox {
+        margin-top: 1.5rem;
+        padding: 0.3rem 1.5rem;
+    }
+    #about #data1 #timebox h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    #about #data1 #timebox h4 i {
+        font-size: 1.5rem;
+    }
+    /* About File Code End */
+
+    /* Service File Code Start */
+    #service .box {
+        margin: 1rem 0.5rem;
+    }
+    /* Service File Code End*/
+}
+/* Responsive Code Ends Here */
